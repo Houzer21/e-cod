@@ -1,0 +1,15 @@
+.section {
+  padding: 2rem 1rem;
+
+  &__heading {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 3rem 5rem;
+  }
+}

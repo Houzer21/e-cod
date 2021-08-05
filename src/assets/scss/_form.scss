@@ -1,0 +1,77 @@
+.form {
+
+  &--auth {
+    background-color: $color--base;
+    border: .3rem solid $color--accent;
+  }
+
+  &__body {
+    padding: 5rem 2rem 2rem;
+  }
+
+  &__footer {
+    background-color: $color--accent;
+    padding: 1rem 2rem;
+    text-align: right;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin: 0 0 2.5rem;
+  }
+
+  &__btn {
+    outline: none;
+    border: none;
+    background-color: $color--base;
+    color: $color--text;
+    text-transform: uppercase;
+    padding: 2rem 4rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    font-family: Muli, sans-serif;
+
+    &:hover {
+      color: $color--accent;
+    }
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2rem;
+
+  &:focus-within {
+    .input-group__label {
+      color: $color--accent;
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 0 .5rem;
+    transition: 300ms ease-in-out;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: .2rem solid lighten($color--base, 10);
+    outline: none;
+    font-size: 1.6rem;
+    padding: .7rem 0;
+    color: $color--text;
+    transition: 300ms ease-in-out;
+    font-family: Muli, sans-serif;
+
+    &:focus {
+      border-color: $color--accent;
+    }
+  }
+}

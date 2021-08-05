@@ -1,0 +1,13 @@
+.nav {
+  display: none;
+  align-items: center;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: $color--accent;
+  animation: forwards navAnime reverse ease-in 300ms;
+}

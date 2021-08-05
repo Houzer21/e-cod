@@ -1,0 +1,32 @@
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+
+  &__heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    span {
+      color: $color--accent;
+    }
+  }
+
+  &__img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 0 2rem 0 5rem;
+    text-align: left;
+
+    &__heading {
+      font-size: 5rem;
+    }
+
+    &__img {
+      text-align: right;
+    }
+  }
+}

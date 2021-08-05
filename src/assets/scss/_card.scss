@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  &--teams {
+    background-color: rgba(white, .1);
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+
+      .card__img {
+        transform: scale(1.1);
+        
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 30%;
+      height: 50%;
+      border-top: .2rem solid $color--accent;
+      border-right: .2rem solid $color--accent;
+      content: "";
+      padding: 1rem;
+      z-index: -1;
+    }
+  }
+
+  &--activity {
+    flex-direction: column;
+    background-color: rgba(black, .3);
+    padding: 0 2rem;
+  }
+
+  &--link {
+    padding: 0 2rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color--accent;
+    color: $color--text;
+    text-transform: uppercase;
+    transition: opacity 300ms ease-in-out;
+    position: relative;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    & .lni {color: $color--base;}
+
+    &::before {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 30%;
+      height: 50%;
+      border-top: .2rem solid $color--base;
+      border-right: .2rem solid $color--base;
+      content: "";
+      padding: 1rem;
+      z-index: 1;
+    }
+  }
+
+  &__img {
+    height: auto;
+    width: 100%;
+    transition: transform 300ms ease-in;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 500;
+
+    &--small {
+      font-size: 1.3rem;
+      font-weight: normal;
+      opacity: .7;
+    }
+
+    &--big {
+      font-size: 3rem;
+      font-weight: normal;
+    }
+  }
+
+  &__top {
+    border-bottom: thin solid rgba($color--text, .3);
+    padding: 1rem 0;
+  }
+}

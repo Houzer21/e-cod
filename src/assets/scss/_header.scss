@@ -1,0 +1,47 @@
+.header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: lighten($color--base, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: bold;
+
+    span {
+      color: $color--accent;
+      font-weight: normal;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: $color--accent;
+    color: $color--text;
+    text-transform: uppercase;
+
+    .lni {margin: 0 .5rem 0 0;}
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 2rem 5rem;
+
+    &__link {
+      padding: 1rem 2rem;
+    }
+  }
+}
